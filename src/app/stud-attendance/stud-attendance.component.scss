@@ -1,0 +1,92 @@
+.back_color{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+}
+
+.header_color{
+    --ion-background-color : rgb(22, 54, 82);
+    color: aliceblue;
+}
+
+.head{
+border-bottom: 5px solid #FF7216;
+
+}
+
+.btn{
+    --ion-color-primary: #FF7216;
+    
+    }
+
+    
+.sub1{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 15px;
+    text-align: left;
+    color:black;  
+    // white-space: normal ;
+    margin-left:1px ;
+    box-sizing: content-box;
+   
+  }
+  .sub2{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 15px;
+    text-align: center;
+    color:black;
+    margin-left: 6%;
+  }
+  .sub3{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 15px;
+    text-align:center;
+    color:black;
+  
+  }
+  .ion-label1{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 10px;
+    text-align:center;
+    color:black;
+    white-space: normal ;
+  
+   
+   
+  }
+  .ion-label2{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 10px;
+    text-align:center;
+    color:black;
+   
+  }
+  .ion-label3{
+       --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+    margin-top: 0 !important;
+    font-size: 10px;
+    text-align: center;
+    color:black;
+    
+  
+  }
+  .fixed[scrolly=true], div[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  .fixed[scrolly=true] {
+    overflow-y: auto;
+  }
+  
+  .fixed[scrolly=true] {
+    overflow-y: auto;
+  }

@@ -1,0 +1,60 @@
+.send_center{
+    margin-left:80px;
+    --ion-color-primary: #FF7216;
+}
+
+.header_color{
+  --ion-background-color : rgb(22, 54, 82);
+  color: aliceblue;
+}
+.passwordicon{
+  font-size: 2rem !important;
+  position: relative !important;
+  //top: 0px !important;
+  margin: 0 auto !important;
+  color: gray;
+}
+
+
+.head{
+  border-bottom: 5px solid #FF7216;
+  
+  }
+
+
+.back_color{
+    //--ion-background-color : rgb(53, 158, 177);
+      //height: 200px;
+      //background-color: rgb(160, 206, 214); /* For browsers that do not support gradients */
+      //background-image: linear-gradient(rgb(53, 158, 177),white); /* Standard syntax (must be last) */
+          --background: linear-gradient(197deg, rgb(160, 206, 214) 0%, rgb(110, 190, 204) 13.5%, rgb(62, 164, 182) 43.33%, rgb(7, 92, 107) 100%);
+      
+    
+}
+
+.textbox_style{
+  --ion-background-color :  rgb(242, 247, 245);
+  --border-radius : 20px;
+
+}
+
+.br_line{
+   display: block;
+   margin-bottom: 5px;
+   line-height: 5px;
+
+}
+
+.text_style{
+   font-family: "Times New Roman", Times, serif;
+   color: rgb(28, 53, 75);
+
+  
+}
+  
+.forget_style{
+  font-style: oblique;
+  color: aliceblue;
+  text-decoration: none;
+
+}

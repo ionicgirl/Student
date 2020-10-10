@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="ion-toolbar" class="header_color">
+      <ion-buttons slot="start"><abbr title="logout">
+          <ion-back-button defaultHref="stud_attendance"></ion-back-button></abbr></ion-buttons>
+    <ion-title>
+        Subject Details
+    </ion-title>
+ </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding> 
+  <div *ngIf="subjectdetails" class="bottomRow">  
+  {{subjectdetails.subject}}  
+  
+<ion-grid>
+  <ion-row class="bottomRow">
+        <ion-col size="4"><b>Date</b></ion-col>
+        <ion-col><b>Time</b></ion-col>
+        <ion-col><b>Present/Absent</b></ion-col>          
+  </ion-row> 
+  
+  <ion-row  *ngFor = "let item of subjectdetails.details" class="bottomRow" >
+        <ion-col> {{item.sessiondate}} </ion-col>
+        <ion-col >{{item.sessiontime}}</ion-col>
+        <ion-col >{{item.presentabsent}}</ion-col>
+        
+  </ion-row>   
+  </ion-grid>
+
+</div>
+
+  </ion-content>

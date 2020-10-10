@@ -1,0 +1,48 @@
+.forget_back{
+    //border: 1px solid #ccc;
+padding: 10px;
+border-radius: 10px;
+}
+
+.forget_back:hover
+{
+    box-shadow: 0 0 11px rgba(33,33,33,.1);
+    padding: 10px;
+    // height: 100%;
+}
+.send_center{
+    margin-left: 45px;
+    --ion-color-primary: #FF7216;
+}
+
+.header_color{
+    --ion-background-color : rgb(22, 54, 82);
+    color: aliceblue;
+}
+
+.head{
+border-bottom: 5px solid #FF7216;
+
+}
+
+.text_color{
+   font-family: "Times New Roman", Times, serif;
+   color: rgb(28, 53, 75);
+    
+}
+
+.back_color{
+    --background: linear-gradient(197deg, rgb(158, 227, 240) 2%, rgb(82, 180, 197) 13.5%, rgb(50, 174, 196) 43.33%, rgb(43, 145, 163) 100%);
+}
+
+.textbox_color{
+    --ion-background-color :  rgb(242, 247, 245);
+    --border-radius : 20px;
+
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}  

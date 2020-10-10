@@ -1,0 +1,47 @@
+<ion-header class="head">
+    <ion-toolbar class="header_color">
+      <ion-button (click)="logout()" class="btn" float-right><ion-icon name="log-out"></ion-icon></ion-button>
+      <ion-title>
+      Student Attendance
+      </ion-title>
+     
+   </ion-toolbar>
+  </ion-header>
+ 
+   <!-- <ion-content padding class="back_color">  -->
+      <ion-content>
+   
+    <ion-item *ngFor = "let item of attendance">
+ 
+        <!--
+          -->
+        <ion-card style="width: 100%">
+            <ion-card-header>
+              <ion-card-title>{{item.subject}}</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content style="color: brown">
+                <ion-badge color="warning">{{item.session_attended}}/{{item.total_sessions}}</ion-badge>
+                <ion-button class="btn" (click)="openDetails(item)" float-right>Details</ion-button>
+                
+                <ion-progress-bar value=" {{item.session_attended /item.total_sessions}}" ></ion-progress-bar>
+            </ion-card-content>
+          </ion-card>
+    
+       
+         
+        
+    </ion-item>
+    
+        <ion-infinite-scroll threshold="100px" (ionInfinite)="loadMore($event)">  
+          <ion-infinite-scroll-content 
+            loadingSpinner="null"
+            loadingText="" >
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </ion-content>
+
+  
+
+  
+  

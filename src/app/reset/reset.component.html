@@ -1,0 +1,59 @@
+<ion-header class="head">
+  <ion-toolbar class="header_color">
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button></ion-buttons>
+      <ion-title>
+        Reset Password
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="back_color" >
+  <div class="ion-padding">
+      <form [formGroup]="restForm">
+          <ion-grid>
+            <ion-row color="primary" justify-content-center>
+              <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div text-center>
+                  <h3 class="text_color">Verify Email</h3>
+                </div>
+                <div padding>
+                  
+                 <ion-item class="textbox_color" ><ion-icon name="person"></ion-icon>&nbsp;
+                    <ion-input  formControlName="email" type="email" placeholder="Your@email.com"  required></ion-input>
+                  </ion-item>
+                
+                 </div>
+                 
+                <div padding *ngIf="!aftercodesend">
+    <ion-button size="default" class="send_center" shape="round" (click)="sendcode()">Send Code</ion-button>
+  </div>
+
+<ion-grid *ngIf="aftercodesend">
+       <div padding>
+            <ion-item class="textbox_color">
+                <ion-input formControlName="code" type="code" placeholder="Enter code"  required></ion-input>
+              </ion-item>
+        </div>
+        <div padding>
+            
+            <ion-item class="textbox_color"><ion-icon name="lock"></ion-icon>&nbsp;
+              <ion-input formControlName="password" [type]="password" placeholder="Password"  required></ion-input>
+          <ion-icon name="eye-off" [name]="passwordicon" class="passwordicon" (click)='hideshowpassword()' slot='end'></ion-icon>
+           
+            </ion-item>
+            </div>
+       
+    </ion-grid>
+    <div padding *ngIf="aftercodesend">
+        <ion-button size="default" shape="round" class="send_center" (click)="resetpwd()" >set password</ion-button>
+      </div>
+ 
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
+    
+
+  </div>
+</ion-content>
